@@ -4,7 +4,7 @@ Members:
 Joey Lim, Y.Y., Lee, B.S.,Leong, J.H.,Liew.
 */
 
-% Draw the tree
+% Draw the edges between the nodes
 s(a, b).
 s(a, c).
 s(b, d).
