@@ -1,3 +1,10 @@
+/*
+This is a project for TAI 2151-Artificial Intelligence Fundamentals assignment.
+Members:
+Joey Lim, Y.Y., Lee, B.S.,Leong, J.H.,Liew.
+*/
+
+% Draw the tree
 s(a, b).
 s(a, c).
 s(b, d).
@@ -12,8 +19,13 @@ s(f, l).
 s(f, m).
 s(g, n).
 s(g, o).
-goal(m).
 
+% Goal node
+goal(n).
+
+depth_first_iterative_deepening(Node, Solution):-
+	path(Node, GoalNode,Solution),
+	goal(GoalNode).
 
 path(Node, Node, [Node]).
 
